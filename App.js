@@ -1,20 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {View,SafeAreaView } from 'react-native';
+import NavigationBar from './screens/Homescreen/navigationbar';
+import twrnc from 'tailwind-react-native-classnames';
 
-export default function App() {
+const App=()=> {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView>
+   <View style={twrnc`mt-1 flex-col`}>
+      <NavigationBar/>
       <StatusBar style="auto" />
     </View>
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+export default App;

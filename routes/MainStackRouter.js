@@ -11,13 +11,13 @@ const Stack = createStackNavigator();
 const MainStackRouter = () => {
   return (
       <Stack.Navigator
-        initialRouteName="Home"
+        initialRouteName="MainHome"
         screenOptions={{
           headerShown: false,
           headerShadowVisible: false,
         }}
       >
-        <Stack.Screen name="Home" component={MainHome} />
+        <Stack.Screen name="MainHome" component={MainHome} />
         <Stack.Screen name="Stores" component={Stores} />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="Order" component={Order} />

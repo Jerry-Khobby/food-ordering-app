@@ -14,7 +14,7 @@ import Icon_fontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const NavigationBar = () => {
   return (
-<View style={twrnc`flex  flex-row items-center justify-between mx-2 `}>
+<View style={twrnc`flex  flex-row items-center justify-between`}>
 <View style={twrnc`flex flex-row items-center justify-between`}>{/** left hand side  */}
 <View style={twrnc`items-center mr-3`}>
 <TouchableOpacity>

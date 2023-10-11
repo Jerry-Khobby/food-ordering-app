@@ -1,16 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import {View,SafeAreaView } from 'react-native';
-import NavigationBar from './screens/Homescreen/navigationbar';
 import twrnc from 'tailwind-react-native-classnames';
+import { NavigationContainer } from '@react-navigation/native';
+import BottomNavigationBar from './routes/TabNavigation';
+
+
 
 const App=()=> {
   return (
+    <NavigationContainer>
     <SafeAreaView>
    <View style={twrnc`mt-1 flex-col`}>
-      <NavigationBar/>
-      <StatusBar style="auto" />
+    <StatusBar style="auto" />
     </View>
     </SafeAreaView>
+    <BottomNavigationBar/>
+    </NavigationContainer>
   );
 }
 

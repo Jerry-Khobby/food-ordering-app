@@ -19,8 +19,6 @@ const BottomTabNavigator = () => {
     <Tab.Navigator
       screenOptions={({ route }) => ({
         tabBarIcon: ({ color, size }) => {
-          let iconName;
-
           if (route.name === 'Home') {
             return <Icon_Ant name="home" size={size} color={color} />;
           } else if (route.name === 'Stores') {

@@ -1,6 +1,7 @@
 import {Text, View,Image } from 'react-native'
 import React from 'react'
 import twrnc from 'tailwind-react-native-classnames';
+import Icon_Ant from "react-native-vector-icons/AntDesign"
 
 
 
@@ -11,28 +12,25 @@ import twrnc from 'tailwind-react-native-classnames';
 // for now let me apply it like this 
 const SecondCardSection = () => {
   return (
-    <View style={twrnc`flex items-center justify-around bg-white h-48 flex-row mb-3`}>
+    <View style={twrnc`flex items-center justify-around bg-white h-36 flex-row mb-3 rounded-sm`}>
     <View style={twrnc`flex items-center justify-center  flex-col`}>
-        <View>
-        <Image source={require('../../assets/Image.png')} />
+    <View style={twrnc` flex flex-col items-center justify-center h-20`}>
+<Text style={twrnc`h-5 font-medium text-base`}>Online reservation</Text>
+<Text style={twrnc`font-normal text-xs text-gray-600`}>Table booking</Text>
         </View>
-        <View style={twrnc`flex flex-col items-center justify-center  `}>
-        <Text>Store Pickup</Text>
-        <Text>Best Quality</Text>
+        {/*** a touchable opacity may come here oneday for  navigation  */}
+        <View style={twrnc`flex flex-row rounded-2xl h-7 border border-blue-400 items-center justify-center  w-44`}>
+        <Icon_Ant name='calendar' size={15} color="#63b3ed" style={twrnc`mx-4`}/>
+        <Text style={twrnc` text-blue-400 mr-3`}>Reserve a table </Text>
         </View>
-        
     </View>
-    <View style={twrnc`h-20 border-l border-gray-400 mx-2`}/>
-    <View>
-        <View>
-        <Image source={require('../../assets/Image.png')} />
+    <View style={twrnc` flex flex-col items-center justify-center`}>
+        <View style={twrnc` flex flex-col items-center justify-center h-20`}>
+        <Image source={require('../../assets/Image_3.png')} />
         </View>
-        <View>
-        <Text>Delivery</Text>
-    <Text>Always on time</Text>
+        <View style={twrnc`flex flex-row rounded-2xl h-7 border border-blue-400 items-center justify-center w-32`}>
+        <Text style={twrnc`mx-4 text-blue-400`}>My reservations</Text>
         </View>
-        {/** for the buttons that will be passed */}
-
     </View>
     </View>
   )

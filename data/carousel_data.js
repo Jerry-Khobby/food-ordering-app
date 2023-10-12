@@ -1,8 +1,8 @@
 const data = [
-    { title: 'Item 1' },
-    { title: 'Item 2' },
-    { title: 'Item 3' },
-    { title: 'Item 4' },
+    { image: require('../assets/image_carousel_4.png') },
+    { image: require('../assets/image_carousel_4.png')},
+    { image: require('../assets/image_carousel_4.png') },
+    { image: require('../assets/image_carousel_4.png') },
   ];
 
 

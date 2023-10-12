@@ -18,6 +18,8 @@ const BottomTabNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
+        activeTintColor: 'blue',
+        inactiveTintColor: 'gray',
         tabBarIcon: ({ color, size }) => {
           if (route.name === 'Home') {
             return <Icon_Ant name="home" size={size} color={color} />;
@@ -30,10 +32,6 @@ const BottomTabNavigator = () => {
           }
         },
       })}
-      tabBarOptions={{
-        activeTintColor: 'blue',
-        inactiveTintColor: 'gray',
-      }}
     >
       <Tab.Screen name="Home" component={MainStackRouter}  options={{headerShown:false}}/>
       <Tab.Screen name="Stores" component={Stores} options={{headerShown:false}} />

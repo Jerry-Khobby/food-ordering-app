@@ -5,6 +5,7 @@ import twrnc from 'tailwind-react-native-classnames';
 import CarouselSection from './carousel';
 import CardSection from './cards';
 import SecondCardSection from './secondcard';
+import PromotionSection from './promotionsection';
 
 const MainHome = () => {
   return (
@@ -14,7 +15,7 @@ const MainHome = () => {
       <CarouselSection />
       <CardSection />
       <SecondCardSection />
-      <SecondCardSection />
+      <PromotionSection />
     </ScrollView>
     </View>
   )

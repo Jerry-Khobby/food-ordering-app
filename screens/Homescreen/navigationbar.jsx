@@ -30,6 +30,8 @@ const NavigationBar = () => {
 
 
 {/** right hand-side , this part involves the icons and the 3 dots */}
+
+{/** this ones will become clickable maybe in the nearby future so I might be using the touchableOpacity */}
 <View style={twrnc`flex flex-row items-center bg-gray-200 justify-center w-14 h-4  rounded-md`}>
 <Icon name="dots-three-horizontal"/>
 <View style={twrnc`h-3 border-l border-gray-400 mx-2`} />

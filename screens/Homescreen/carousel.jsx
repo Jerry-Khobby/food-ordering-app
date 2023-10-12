@@ -16,7 +16,7 @@ const CarouselSection = () => {
 
   const renderItem = ({ item }) => {
     return (
-      <View style={twrnc`bg-blue-500 w-72 h-40 justify-center items-center rounded-lg`}>
+      <View style={twrnc`bg-blue-500 w-72 h-36 justify-center items-center rounded-lg`}>
         <Text style={twrnc`text-white text-center`}>{item.title}</Text>
       </View>
     );

@@ -55,6 +55,8 @@ const CarouselSection = () => {
         contentContainerCustomStyle={twrnc`flex-row items-center justify-center`}
         slideStyle={twrnc`mx-4`}
         onSnapToItem={(index) => setActiveSlide(index)}
+        autoplay={true}
+        autoplayInterval={3000}
       />
       {renderPagination()}
     </View>

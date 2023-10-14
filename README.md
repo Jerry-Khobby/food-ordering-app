@@ -41,7 +41,29 @@ Technologies Used:
 2. Expo 
 3. React Navigation 
 4. Tailwind Css 
+5. react-native-vector-icons
+6. react-native-reanimated-carousel 
 
+
+Contributing 
+Contributions on the home screen of the food delivery application are welcome! Please read CONTRIBUTING.md for details on how to contribute to this project
+
+License
+This project is licensed under the MIT License
+
+
+
+Credits
+https://www.npmjs.com/package/react-native-snap-carousel Carousel - This was used to create the carousel on the home screen
+https://www.npmjs.com/package/react-native-vector-icons Icons- This was used to create the  icons on home screen
+
+
+Contact
+For questions or feedback, please contact:
+
+Jeremiah Anku Coblah
+Email: jerrymardeburg@gmail.com
+GitHub: https://github.com/Jerry-Khobby
 
 
 

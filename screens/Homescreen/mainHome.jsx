@@ -9,7 +9,7 @@ import PromotionSection from './promotionsection';
 
 const MainHome = () => {
   return (
-    <View style={twrnc`mx-3`}>
+    <View style={twrnc`mx-3 pt-8`}>
       <NavigationBar/>
       <ScrollView  showsVerticalScrollIndicator={false} >
       <CarouselSection />

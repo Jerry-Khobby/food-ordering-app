@@ -9,7 +9,7 @@ import BottomNavigationBar from './routes/TabNavigation';
 const App=()=> {
   return (
     <NavigationContainer>
-    <View style={twrnc`bg-gray-100 pt-8`}>
+    <View style={twrnc`bg-gray-100`}>
     <StatusBar   style="light-content" />
     <SafeAreaView>
     <ScrollView>

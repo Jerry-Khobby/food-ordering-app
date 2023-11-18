@@ -1,4 +1,4 @@
-#Food and Beverage Delivery Mobile App
+### Food and Beverage Delivery Mobile App
 Food and Beverage Delivery Mobile is a mobile applications that allows users or customers to order or purchase foods and beverages from the places of convenience.
 This mobile application consists of four different main screens. 
 1. The Home screen
@@ -7,7 +7,7 @@ This mobile application consists of four different main screens.
 4. The Profile screen
 
 
-##The Home Screen 
+### The Home Screen 
 This is a screen that introduces the user to the purpose of the mobile application
 
 #Screenshots of the Home Screen
@@ -15,7 +15,7 @@ This is a screen that introduces the user to the purpose of the mobile applicati
 ![Home screen_1](home_screen_1.jpg)
 ![Home screen_2](home_screen_2.jpg)
 
-##Installation 
+### Installation 
 ### Prerequisites
 - [Node.js](https://nodejs.org/)
 - [Expo CLI](https://docs.expo.dev/get-started/installation/)

@@ -1,5 +1,5 @@
 import {Text, View,TextInput,FlatList} from 'react-native'
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import Icon from 'react-native-vector-icons/Entypo'
 import Icon_fontAwesome from 'react-native-vector-icons/FontAwesome';
 import storeData from '../../data/stores';
@@ -7,6 +7,24 @@ import Icon_Mat from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Stores = () => {
 // defining that can be rendered by the flatList 
+const [searchQuery, setSearchQuery] = useState('');
+const [filteredData, setFilteredData] = useState([]);
+
+useEffect(() => {
+  // Function to filter data based on searchQuery
+  const filterData = () => {
+    const lowerCaseQuery = searchQuery.toLowerCase();
+    const filtered = storeData.filter(
+      (item) =>
+        item.name.toLowerCase().includes(lowerCaseQuery) ||
+        item.location.toLowerCase().includes(lowerCaseQuery)
+    );
+    setFilteredData(filtered);
+  };
+
+  filterData();
+}, [searchQuery]);
+
 const renderStoreItem=({item})=>(
   <View className="h-20 px-5 mt-3 flex flex-row bg-white mx-3 items-center rounded-lg">
   <Icon_Mat name="storefront-outline" size={25}
@@ -51,6 +69,8 @@ const renderStoreItem=({item})=>(
             marginRight:10,
           }}
           placeholderTextColor="#A0A0A0"
+          value={searchQuery}
+          onChangeText={(text) => setSearchQuery(text)}
         />
     </View>
     </View>
@@ -58,7 +78,7 @@ const renderStoreItem=({item})=>(
 
 <View className="bg-gray-100 w-full h-full">
 <FlatList
-data={storeData}
+data={filteredData}
 keyExtractor={(item)=>item.id.toString()}
 renderItem={renderStoreItem}
 />
